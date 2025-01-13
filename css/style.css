@@ -1,0 +1,86 @@
+/* ===============all links css start=============*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+/* =============== all links css end ============= */
+/* ================common css start ============== */
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --quicksand: "Quicksand", serif;
+  --opensans: "Open Sans", serif;
+  --primary: #001837;
+  --secondary : #565656;
+  --brand : #FBA311
+}
+body{
+  background-color:#F0F2F4 ;
+}
+.common-btn{
+  padding: 20px 30px;
+  border-radius: 50px;
+  background-color: var(--primary);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--quicksand);
+  color: white;
+  line-height: 24px;
+}
+ /* ================common css end ============== */
+
+ /* =============menupart start =============== */
+.menubar{
+  padding: 0 30px;
+  margin: 30px 40px;
+  background-color: white;
+  border-radius: 30px;
+}
+.menubar ul{
+  display: flex;
+  gap: 46px;
+}
+.menubar ul li a{
+  font-size: 14px;
+  font-weight: 800;
+  font-family: var(--quicksand);
+  color: var(--primary) !important;
+  line-height: 100px;
+  letter-spacing: 0.5px;
+  transition: all linear 0.3s;
+}
+.menubar ul li a:hover{
+  color: var(--brand) !important;
+}
+.menubar .call{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.menubar .call img{
+  width: 50px;
+  cursor: pointer;
+}
+.menubar .call a{
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 800;
+  font-family: var(--quicksand);
+  line-height: 24px;
+}
+.menubar-end{
+  display: flex;
+  gap: 30px;
+}
+.menubar-end button {
+  background-color: transparent;
+  border: none;
+}
+
+ /* =============menupart end =============== */
