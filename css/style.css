@@ -32,12 +32,13 @@ body{
   font-family: var(--quicksand);
   color: white;
   line-height: 24px;
+  transition: 0.3s;
 }
  /* ================common css end ============== */
 
  /* =============menupart start =============== */
 .menubar{
-  padding: 0 30px;
+  /* padding: 0 30px; */
   margin: 30px 40px;
   background-color: white;
   border-radius: 30px;
@@ -54,6 +55,21 @@ body{
   line-height: 100px;
   letter-spacing: 0.5px;
   transition: all linear 0.3s;
+  position: relative;
+}
+.menubar ul li a::after{
+  content: "";
+  height: 6px;
+  width: 6px;
+  background-color: var(--brand);
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  transform: translateY(-50%);
+}
+.menubar ul li:last-child a::after{
+  display: none;
 }
 .menubar ul li a:hover{
   color: var(--brand) !important;
@@ -82,5 +98,101 @@ body{
   background-color: transparent;
   border: none;
 }
+.menubar-end .common-btn:hover{
+  transform: scale(1.07);
+  background-color: var(--brand);
+}
 
  /* =============menupart end =============== */
+
+ /* ============= banner part start ========== */
+
+ #banner{
+  margin-top: 25px;
+  padding: 155px 0 170px 230px;
+  background: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 40px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+ }
+ #banner::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(29, 25, 58) 0%, rgba(9,9,121,0.09576330532212884) 90%);
+  z-index: -1;
+ }
+ #banner h2{
+  font-size: 14px;
+  font-family: var(--opensans);
+  font-weight: 600;
+  color: white;
+  line-height: 24px;
+  letter-spacing: 1px;
+ }
+  #banner h1{
+  font-size: 80px;
+  font-family: var(--quicksand);
+  font-weight: 800;
+  color: white;
+  line-height: 80px;
+ }
+ #banner p{
+  font-size: 18px;
+  font-family: var(--opensans);
+  font-weight: 400;
+  color: white;
+  line-height: 24px;
+  margin: 46px 0 25px;
+ }
+ #banner .common-btn{
+  background-color: var(--brand);
+  animation: banner-btn 1s infinite linear alternate;
+ }
+ #banner .common-btn:hover{
+  background-color: #001837;
+ }
+
+ #banner img{
+  animation: banner-star 1s infinite linear alternate;
+ }
+
+ /* ==============banner animation start============= */
+ @keyframes banner-star {
+    0%{
+      transform: translateY(-20px);
+    }
+    100%{
+      transform: translateY(7px);
+    }
+ }
+@keyframes banner-btn {
+  0%{
+    transform: scale(1.2);
+  }
+}
+
+
+ /* ============= banner part end ============ */
+
+ /* ============= services part start ======== */
+
+#services{
+  margin: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+ /* ============= services part end ========== */
