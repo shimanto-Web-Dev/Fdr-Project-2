@@ -31,7 +31,7 @@ body{
   font-weight: 600;
   font-family: var(--quicksand);
   color: white;
-  line-height: 24px;
+  /* line-height: 24px; */
   transition: 0.3s;
 }
  /* ================common css end ============== */
@@ -117,6 +117,7 @@ body{
   border-radius: 30px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
  }
  #banner::after{
   content: "";
@@ -184,8 +185,128 @@ body{
  /* ============= services part start ======== */
 
 #services{
-  margin: 40px 0;
+  margin: 40px;
 }
+#services .ser-start{
+  background: url(../images/services1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 43px 0 40px 40px;
+  position: relative;
+}
+#services .ser-start .header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#services .ser-start .header .brush{
+  color: var(--brand);
+  transform: rotate(225deg);
+}
+#services .ser-start .header h3{
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 17px;
+}
+#services .ser-start p{
+  width: 298.45px;
+  font-size: 26px;
+  font-weight: 700;
+  font-weight: var(--quicksand);
+  color: #001837;
+  line-height: 30px;
+  margin-top: 101px;
+}
+#services .ser-start .service-arrow{
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 70px;
+  height: 60px;
+  background-color: #F0F2F4;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 10px 10px 0;
+}
+#services .ser-start .service-arrow a{
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  color: white;
+}
+#services .ser-center{
+  height: 100%;
+  padding: 20px;
+  background-color: var(--brand);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#services .ser-center h2{
+  font-size: 70px;
+  font-weight: 800;
+  font-family: var(--opensans);
+  line-height: 100px;
+  color: var(--primary);
+}
+#services .ser-center span{
+  color: var(--brand);
+  background-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+#services .ser-center p{
+  font-size: 12px;
+  font-weight: 400;
+  font-family: var(--opensans);
+  color: white;
+  line-height: 27px;
+}
+#services .ser-end{
+  height: 100%;
+  background: url(../images/services2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 40px 0 0 40px;
+  position: relative;
+  overflow: hidden;
+}
+#services .ser-end h4{
+  width: 236px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 28px;
+}
+#services .ser-end .btn{
+  width: 179px;
+  height: 70.61px;
+  background-color: #F0F2F4;
+  padding-top: 10px;
+  padding-left: 15px;
+  border-radius: 30px;
+  position: absolute;
+  right: -13px;
+  bottom: 0;
+}
+#services .ser-end .common-btn{
+  /* font-size: 15px; */
+
+}
+
+
 
 
 
