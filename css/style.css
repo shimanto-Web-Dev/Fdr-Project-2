@@ -306,7 +306,7 @@ body{
   background-color: var(--brand);
 }
   
-
+/* =========== service animation part ============ */
 @keyframes serv-arrow {
   0%{
     transform: rotate(0deg);
@@ -315,11 +315,89 @@ body{
     transform: rotate(360deg);
   }
 }
-@
-
-
-
-
 
 
  /* ============= services part end ========== */
+
+ /* ============= choose us part start ========== */
+
+#chooseus{
+  background: url(../images/choose_us_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 100px 248px;
+}
+#chooseus .button .brush{
+  color: var(--brand);
+  transform: rotate(225deg);
+}
+#chooseus .button h4{
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 24px;
+}
+#chooseus .button a{
+  background-color: white;
+  color: var(--primary);
+  margin-top: 258px;
+}
+#chooseus .text{
+  display: flex;
+  gap: 40px;
+}
+#chooseus .text:nth-child(2){
+  margin-top: 74px;
+}
+#chooseus .text .single-card{
+  width: 356px;
+}
+#chooseus .text .single-card h2{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 28px;
+  margin: 25px 0 10px;
+}
+#chooseus .text .single-card p{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--opensans);
+  color: var(--secondary);
+  line-height: 24px;
+}
+
+ /* ============= choose us part end ========== */
+
+ /* ============= marquee part start ========== */
+
+#marquee .marquee-row{
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+#marquee .marquee-row h2{
+  font-size: 90px;
+  font-weight: 700;
+  font-family: var(--opensans);
+  color: white;
+  line-height: 120px;
+  background-color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 24, 55, 0.2);
+}
+#marquee .marquee-row img{
+  animation: marq-img 2s infinite linear;
+}
+
+/* ============= marquee animation ===================== */
+
+@keyframes marq-img {
+  0%{
+    transform: rotate(360deg);
+  }
+}
+
+ /* ============= marquee part end ========== */
