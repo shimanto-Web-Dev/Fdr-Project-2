@@ -242,6 +242,7 @@ body{
   align-items: center;
   transform: rotate(-45deg);
   color: white;
+  animation: serv-arrow 1s infinite linear ;
 }
 #services .ser-center{
   height: 100%;
@@ -297,19 +298,24 @@ body{
   padding-top: 10px;
   padding-left: 15px;
   border-radius: 30px;
-  position: absolute;
-  right: -13px;
+  right: -10px;
   bottom: 0;
+  position: absolute;
 }
-#services .ser-end .common-btn{
-  /* font-size: 15px; */
-
+#services .ser-end .btn a:hover{
+  background-color: var(--brand);
 }
+  
 
-
-
-
-
+@keyframes serv-arrow {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@
 
 
 
