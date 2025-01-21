@@ -422,12 +422,15 @@ body{
  /* ============= Cleaning part start ========== */
 
 #cleaning{
-  padding-top: 100px;
+  padding: 100px 0;
   background-color: white;
 }
 #cleaning .img{
   border-radius: 30px;
   overflow: hidden;
+}
+#cleaning .img img{
+  width: 100%;
 }
 #cleaning .text{
   padding: 100px 120px;
@@ -447,30 +450,86 @@ body{
   line-height: 24px;
   letter-spacing: 0.5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#cleaning .text h2{
+  font-size: 55px;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 65px;
+  letter-spacing: 0.25px;
+  margin: 6px 0 30px;
+}
+#cleaning .text p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--opensans);
+  color: var(--secondary);
+  line-height: 26px;
+  margin-bottom: 52px;
+}
+#cleaning .counter{
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 56px;
+  margin-bottom: 35px;
+}
+#cleaning .text .single-col{
+  display: flex;
+  gap: 37px;
+  
+}
+#cleaning .text .single-col h3{
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 28px;
+}
+#cleaning .text .single-col h3 sup{
+  font-size: 15px;
+}
+#cleaning .text .single-col p{
+  width: 85px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 24px;
+  margin-top: 20px;
+}
+#cleaning h4{
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 22px;
+  margin-bottom: 22px;
+}
+#cleaning .bottom-text{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#cleaning .bottom-text h6{
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 35px;
+}
+#cleaning .bottom-text .check{
+  font-size: 24px;
+  color: var(--brand);
+}
 
  /* ============= Cleaning part end ========== */
