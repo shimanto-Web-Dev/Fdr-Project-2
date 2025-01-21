@@ -201,7 +201,7 @@ body{
   align-items: center;
   gap: 10px;
 }
-#services .ser-start .header .brush{
+ .brush{
   color: var(--brand);
   transform: rotate(225deg);
 }
@@ -327,6 +327,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0 100px 248px;
+  background-color: white;
+
 }
 #chooseus .button .brush{
   color: var(--brand);
@@ -373,11 +375,19 @@ body{
  /* ============= choose us part end ========== */
 
  /* ============= marquee part start ========== */
+#marquee{
+  overflow: hidden;
+  background-color: white;
 
+}
 #marquee .marquee-row{
   display: flex;
   align-items: center;
   gap: 45px;
+  width: 100%;
+  animation: text-slider 15s linear infinite;
+  animation-delay: -20s;
+  
 }
 #marquee .marquee-row h2{
   font-size: 90px;
@@ -399,5 +409,68 @@ body{
     transform: rotate(360deg);
   }
 }
-
+@keyframes text-slider {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-400%);
+  }
+}
  /* ============= marquee part end ========== */
+
+ /* ============= Cleaning part start ========== */
+
+#cleaning{
+  padding-top: 100px;
+  background-color: white;
+}
+#cleaning .img{
+  border-radius: 30px;
+  overflow: hidden;
+}
+#cleaning .text{
+  padding: 100px 120px;
+  background-color: #F0F2F4;
+  border-radius: 30px;
+}
+#cleaning .text .header{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#cleaning .text h5{
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  color: var(--primary);
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ============= Cleaning part end ========== */
