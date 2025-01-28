@@ -136,13 +136,26 @@ body{
   color: white;
   line-height: 24px;
   letter-spacing: 1px;
+  transform: translateX(0);
+  animation-name: banner-h2;
+  animation-timing-function: linear;
+  animation-duration: 2s;
  }
-  #banner h1{
+.banner_heading{
+  width: 580px;
+  height: 170px;
+  overflow: hidden;
+
+}
+#banner h1{
   font-size: 80px;
   font-family: var(--quicksand);
   font-weight: 800;
   color: white;
   line-height: 80px;
+  animation-name: banner-h1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
  }
  #banner p{
   font-size: 18px;
@@ -161,21 +174,30 @@ body{
  }
 
  #banner img{
-  animation: banner-star 1s infinite linear alternate;
+  animation: banner-star 2s infinite linear ;
  }
 
  /* ==============banner animation start============= */
  @keyframes banner-star {
     0%{
-      transform: translateY(-20px);
+      transform: rotate(-360deg);
     }
-    100%{
-      transform: translateY(7px);
-    }
+    
  }
 @keyframes banner-btn {
   0%{
     transform: scale(1.2);
+  }
+}
+
+@keyframes banner-h2 {
+  0%{
+    transform: translateX(-500px);
+  }
+}
+@keyframes banner-h1 {
+  0%{
+    transform: translateY(300px);
   }
 }
 
@@ -433,6 +455,7 @@ body{
   width: 100%;
 }
 #cleaning .text{
+  height: 100%;
   padding: 100px 120px;
   background-color: #F0F2F4;
   border-radius: 30px;
@@ -533,3 +556,279 @@ body{
 }
 
  /* ============= Cleaning part end ========== */
+
+ /* ============= ourservices part start ============ */
+
+ #our_services{
+  background-color: white;
+  padding-bottom: 90px;
+ }
+ #our_services .heading h4{
+   font: 700 13px var(--quicksand);
+   color: var(--primary);
+   line-height: 24px;
+   letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+ }
+ #our_services .heading h2{
+  font: 700 55px var(--quicksand);
+  color: var(--primary);
+  line-height: 65px;
+  letter-spacing: 0.25px;
+  margin: 8px 0 50px;
+ }
+
+ #our_services .our_services_slider{
+  display: flex;
+  gap: 40px;
+ }
+ #our_services .img{
+  width: 33%;
+   border-radius: 30px;
+   position: relative;
+  }
+
+  #our_services .icons{
+    width: 66px;
+    height: 58px;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    left: 322px;
+    bottom: -10px;
+    padding: 8px 8px 0;
+  }
+  #our_services .icons a{
+    width: 50px;
+    height: 50px;
+    background-color: var(--brand);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: service_icons 1s infinite linear;
+  }
+  #our_services .icons::after{
+    content: '';
+    height: 39px;
+    width: 19px;
+    background-color: transparent;
+    box-shadow: 0 20px 0 0 #fff;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    bottom: 11px;
+    right: 66px;
+  }
+ 
+  #our_services .icons::before{
+    content: '';
+    height: 39px;
+    width: 19px;
+    background-color: transparent;
+    box-shadow: 0 20px 0 0 #fff;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    bottom: 10px;
+    right: -19px;
+  }
+ #our_services .text{
+   padding: 40px 36px 31px;
+  }
+  #our_services .text h3{
+    font: 700 24px var(--quicksand);
+    color: var(--primary);
+    line-height: 28px;
+  }
+  #our_services .text p{
+    font: 400 15px var(--opensans);
+    color: var(--secondary);
+    line-height: 24px;
+    margin: 12px 0 22px;
+  }
+  #our_services .text .bottom_icon{
+    width: 70px;
+    height: 70px;
+    background-color: #F0F2F4;
+    color: var(--brand);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+  }
+  #our_services .text .bottom_icon:hover{
+    transform: scale(1.1);
+  }
+ 
+ 
+ @keyframes service_icons {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+ }
+  
+ /* ============= ourservices part end ============ */
+
+ /* ============= counters part start  ============= */
+
+ #counters{
+  background-color: white;
+  padding-bottom: 100px;
+ }
+  
+  #counters .heading{
+    border-bottom: 1px solid #000;
+    margin-bottom: 100px;
+  }
+  #counters .heading h3{
+    width: fit-content;
+    margin: auto;
+    padding: 0 30px;
+    background-color: white;
+    font: 400 12px var(--opensans);
+    color: var(--secondary);
+    line-height: 12px;
+    transform: translateY(7px);
+  }
+  #counters .single_card h2{
+    font: 800 100px var(--opensans);
+    color: var(--primary);
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+  #counters .single_card h2 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px var(--primary);
+  }
+  #counters .single_card p{
+    font: 400 17px var(--opensans);
+    color: var(--secondary);
+    line-height: 27px;
+  }
+  
+ /* ============= counters part end  ============= */
+
+ /* ============== calculator part start ========= */
+
+#calculator{
+  background-color: white;
+  padding: 0 40px;
+}
+#calculator .calc_bg{
+  background-image: url(../images/calculator_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 100px 52px;
+  border-radius: 30px;
+}
+
+#calculator .form_bg{
+  background-image: url(../images/form-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 80px 100px;
+}
+#calculator h3{
+  font: 700 13px var(--quicksand);
+  color: white;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#calculator h2{
+  max-width: 365px;
+  font: 700 55px var(--quicksand);
+  color: white;
+  line-height: 65px;
+  letter-spacing: 0.25px;
+  margin: 6px 0 48px;
+}
+#calculator .form_bg .calc_form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  position: relative;
+}
+#calculator .form_bg .calc_form .inputs{
+  width: 48%;
+}
+ #calculator select{
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  padding: 19px 31px;
+  border-radius: 50px;
+  font: 400 14px var(--opensans);
+  color: #7892AE;
+  outline: none;
+  line-height: 21px;
+ }
+ #calculator input{
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  padding: 19px 31px;
+  border-radius: 50px;
+  font: 400 14px var(--opensans);
+  color: #7892AE;
+  outline: none;
+  line-height: 21px;
+}
+#calculator input::placeholder{
+  color: #7892AE;
+
+ }
+ #calculator .form_bg .calc_form p{
+   font: italic 15px var(--opensans);
+   color: #D4E0F0;
+  }
+  #calculator .form_bg .calc_form button{
+    border: none;
+    background-color: white;
+    color: var(--primary);
+    padding: 18px 55px;
+    line-height: 24px;
+    font: 15px 600 var(--quicksand);
+    position: absolute;
+    bottom: -100px;
+    right: 24px;
+    transition: .3s ease-in-out;
+  }
+  #calculator .form_bg .calc_form button:hover{
+    background-color: black;
+    color: white;
+  }
+  #calculator .form_bg .calc_form button .arrow{
+    transform: rotate(-45deg);
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* ============== calculator part end ========= */
