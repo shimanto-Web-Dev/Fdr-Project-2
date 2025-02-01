@@ -813,22 +813,252 @@ body{
   #calculator .form_bg .calc_form button .arrow{
     transform: rotate(-45deg);
   }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+  
  /* ============== calculator part end ========= */
+
+ /* ==============testimonial part start ========== */
+
+#testimonial{
+  padding: 100px 40px;
+  background-color: white;
+}
+
+  #testimonial .heading h4{
+   font: 700 13px var(--quicksand);
+   color: var(--primary);
+   line-height: 24px;
+   letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+ }
+ #testimonial .heading h2{
+  font: 700 55px var(--quicksand);
+  color: var(--primary);
+  line-height: 65px;
+  letter-spacing: 0.25px;
+  margin: 8px 0 50px;
+ }
+ #testimonial .single_card{
+  position: relative;
+ }
+ #testimonial .single_card{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  padding: 71px 71px 54px;
+  border: 1px solid rgba(0, 24, 55, 0.15);
+  border-radius: 30px;
+ }
+
+ #testimonial .single_card p{
+  font: 600 24px var(--quicksand);
+  color: var(--primary);
+  line-height: 36px;
+  margin: 23px 0 43px;
+ }
+ #testimonial h3{
+  font: 700 20px var(--quicksand);
+  color: var(--primary);
+  line-height: 24px;
+ }
+ #testimonial h5{
+  font: 400 14px var(--opensans);
+  color: var(--secondary);
+  line-height: 24px;
+ }
+ 
+ #testimonial .test_client{
+  position: absolute;
+  bottom: -1px;
+  right: 56px;
+  overflow: hidden;
+ }
+  
+ /* ==============testimonial part end ========== */
+
+ /* ============== brand part start ============= */
+
+ #brand {
+   background-color: white;
+   
+  }
+  #brand .row{
+    border-top: 1px solid #DEE2E6;
+    padding: 81px 0 80px;
+    
+  }
+  #brand .brand_img{
+    width: 110px;
+    height: 75px;
+    overflow: hidden;
+    position: relative;
+  }
+  #brand .brand_img .main_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+  }
+  #brand .brand_img .hover_img{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s ease-in-out;
+  }
+  #brand .brand_img:hover .main_img{
+    top: -100%;
+  }
+  #brand .brand_img:hover .hover_img{
+    top: 0;
+  }
+  
+ /* ============== brand part end ============= */
+
+ /* ============== pricing part start =========== */
+ 
+ #pricing{
+   background-color: white;
+   padding: 100px 45px;
+  }
+  #pricing .row{
+    background: url(../images/pricing_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 45px;
+    border-radius: 30px;
+  }
+  #pricing .row .single_card{
+    background-color: white;
+    padding: 60px 40px 135px;
+    position: relative;
+    border-radius: 30px;
+    transition:all linear .3s;
+
+  }
+  #pricing .row .single_card h4{
+    font: 700 18px var(--quicksand);
+    color: var(--primary);
+    line-height: 26px;
+    padding-bottom: 10px;
+  }
+  #pricing .row .single_card h2{
+    font: 700 72px var(--quicksand);
+    color: var(--primary);
+    line-height: 72px;
+    border-bottom: 1px solid rgba(0, 24, 55, 0.15);
+    padding-bottom: 36px;
+    position: relative;
+    transition: .3s;
+  }
+  #pricing .row .single_card h2 sup{
+    font-size: 36px;
+    line-height: 46px;
+  }
+   #pricing .row .single_card h2 sub{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary);
+    line-height: 24px;
+  }
+  #pricing ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 15px;
+    margin-top: 40px;
+  }
+  #pricing ul p{
+    font: 400 15px var(--opensans);
+    color: var(--secondary);
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: .3s;
+  }
+
+  #pricing .button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 212px;
+    height: 70px;
+    padding: 10px 15px 0;
+    background-color: #F0F2F4;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  #pricing .common-btn{
+    width: fit-content;
+    font: 600 14px var(--quicksand);
+  }
+  #pricing .common-btn:hover{
+    background-color: var(--brand);
+  }
+  #pricing .row .single_card h2::after{
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--brand);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+  }
+  #pricing .single_card:hover h2::after{
+    width: 100%;
+  }
+  #pricing .single_card:hover{
+    background-color: #001837;
+  }
+  #pricing .single_card:hover h4,
+  #pricing .single_card:hover h2,
+  #pricing .single_card:hover h2 sub,
+  #pricing .single_card:hover h2 sup,
+  #pricing .single_card:hover ul p{
+    color: white;
+  }
+
+  #pricing .heading h4{
+    font: 700 13px var(--quicksand);
+    color: var(--primary);
+    margin-top: 55px;
+    margin-bottom: 8px;
+  }
+  #pricing .heading h2{
+    font: 700 45px var(--quicksand);
+    color: var(--primary);
+    line-height: 65px;
+  }
+  #pricing h6{
+    font: 400 16px var(--opensans);
+    color: var(--secondary);
+    line-height: 26px;
+    margin-top: 32px;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* ============== pricing part end =========== */
