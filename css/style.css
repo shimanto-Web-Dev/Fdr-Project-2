@@ -1040,25 +1040,213 @@ body{
     line-height: 26px;
     margin-top: 32px;
   }
+  /* ============== pricing part end =========== */
+
+  /* ============== news part start ============== */
+
+#news{
+  background-color: white;
+  padding: 100px 0;
+}
+
+#news .heading h5{
+  font: 700 13px var(--quicksand);
+  color: var(--primary);
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+#news .heading h2{
+  font: 700 55px var(--quicksand);
+  color: var(--primary);
+  line-height: 65px;
+  letter-spacing: 0.25px;
+  margin: 8px 0 50px;
+  text-align: center;
+}
+
+#news .single_card{
+  border: 1px solid rgba(0, 24, 55, 0.15);
+  border-radius: 30px;
+}
+#news .single_card .img{
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+}
+#news .single_card .img img{
+  width: 100%;
+  transition: .3s ease-in-out;
+}
+#news .single_card .img img:hover{
+  transform: scale(1.1);
+}
+#news .single_card .img .date{
+  width: 136px;
+  height: 48px;
+  background-color: white;
+  font: 400 14px var(--opensans);
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+  color: var(--secondary);
+  
+}
+#news .single_card .img .date::after{
+  content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 0;
+    right: 100%;
+    height: 40px;
+    width: 20px;
+    box-shadow: 0 20px 0 0 white;
+    border-bottom-right-radius: 20px;
+}
+#news .single_card .img .date::before{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 0;
+    height: 40px;
+    width: 20px;
+    box-shadow: 0 20px 0 0 white;
+    left: 100%;
+    border-bottom-left-radius: 20px;
+}
+
+#news .single_card .text{
+  padding: 45px 35px 39px;
+}
+
+#news .single_card .text h3{
+  font: 700 26px var(--quicksand);
+  color: var(--primary);
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+#news .single_card .text p{
+  font: 400 13px var(--opensans);
+  color: var(--secondary);
+  line-height: 24px;
+  text-transform: uppercase;
+}
+  
+  /* ============== news part end ============== */
+
+  /* ============== footer part start=========== */
+  footer{
+    background-color: rgb(255, 255, 255);
+    padding: 0 40px;
+  }
+  #footer{
+    background-color: var(--primary);
+    background-image: url(../images/footer-bg-img.png);
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    border-radius: 30px;
+  }
+  #footer .img{
+    width: 100%;
+    padding-bottom: 95px;
+  }
+  #footer .icons .social{
+    display: flex;
+    gap: 20px;
+  }
+  #footer .icons .social a{
+    font-size: 20px;
+    color: white;
+    transition: .3s ease-in-out;
+  }
+  #footer .icons .social a:hover{
+    color: var(--brand);
+  }
+  #footer .footer_heading {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 41px;
+  }
+  #footer .footer_heading h2{
+    max-width: 397px;
+    font: 600 40px var(--quicksand);
+    color: white;
+    line-height: 50px;
+  }
+  #footer .footer_heading .inputs{
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 38px;
+  }
+
+  #footer .footer_heading .inputs input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 60%;
+    font: 400 14px var(--opensans);
+    color: rgba(0, 24, 55, 0.90);
+  }
+  #footer .footer_heading .inputs .common-btn{
+    width: 40%;
+    background-color: var(--brand);
+    border: 1px solid transparent;
+  }
+  #footer .footer_heading .inputs .common-btn:hover{
+    background-color: var(--primary);
+    border: 1px solid transparent;
+
+  }
+  #footer h6{
+    font: 700 18px var(--quicksand);
+    color: white;
+    margin: 65px 0 20px;
+  }
+  #footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  #footer ul a{
+    font: 400 14px var(--opensans);
+    color: #ABC6E9;
+    transition: .3s ease-in-out;
+  }
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- /* ============== pricing part end =========== */
+  #footer ul a:hover{
+    color: var(--brand);
+  }
+  #footer ul p{
+    font: 400 14px var(--opensans);
+    color: #ABC6E9;
+    transition: .3s ease-in-out;
+    margin-bottom: 4px;
+  }
+  #footer .hello ul p{
+    font: 400 14px var(--opensans);
+    color: #fff;
+    transition: .3s ease-in-out;
+    margin-bottom: 4px;
+  }
+    
+  /* ============== footer part end=========== */
