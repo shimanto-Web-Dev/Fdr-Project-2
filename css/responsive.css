@@ -2,7 +2,336 @@
 @media (min-width: 1200px) and (max-width: 1399.98px) { }
 @media (min-width: 992px) and (max-width: 1199.98px) { }
 @media (min-width: 768px) and (max-width: 991.98px) { }
-@media (min-width: 576px) and (max-width: 767.98px) { }
+@media (min-width: 576px) and (max-width: 767.98px) {
+        /* =========== menu bar part============== */
+        .menubar{
+            margin: 0;
+            border-radius: 0;
+        }
+        .menubar a img{
+            width: 100px;
+        }
+        .menubar ul {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            gap: 20px;
+        }
+        .menubar ul li a::after {
+            display: none;
+        }
+        .menubar ul li a {
+            line-height: 10px;
+        }
+        .menubar-end {
+            display: none;
+        }
+        /* =========== menu bar part============== */
+        /* =========== banner part============== */
+        #banner{
+            padding: 40px 0;
+            margin: 0 10px;
+        }
+        #banner h2 {
+            font-size: 14px;
+        }
+        #banner img {
+            width: 50px;
+        }
+        #banner h1 {
+            font-size: 52px;
+            width: 377px;
+            line-height: 58px;
+        }
+        #banner p {
+            font-size: 18px;
+            margin: 0px 0 25px;
+            width: 299px;
+        }
+        .common-btn {
+            padding: 15px 18px;
+            font-size: 13px;
+        }
+        #services .ser-start {
+            padding: 18px 0 18px 14px;
+        }
+        #services .ser-start p {
+            width: 190.45px;
+            font-size: 18px;
+            margin-top: 93px;
+        }
+        #services .ser-start .service-arrow {
+            width: 46px;
+            height: 36px;
+        }
+        #services .ser-start .service-arrow a {
+            font-size: 13px;
+        }
+        #services .row{
+            row-gap: 20px;
+        }
+        #services .ser-end {
+            padding: 130px 0 33px 10px;
+        }
+        #services .ser-end h4 {
+            width: 200px;
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 10px;
+        }
+        #services .ser-end .btn {
+            width: 116px;
+            height: 51.61px;
+            padding-top: 8px;
+            padding-left: 11px;
+            right: 8px;
+            bottom: -5px;
+        }
+        .common-btn {
+            padding: 11px 9px;
+            font-size: 10px;
+        }
+        /* =========== banner part============== */
+        /* =========== choose us part============== */
+        #chooseus {
+            padding: 60px 0 0px 3px;
+            text-align: center;
+        }
+        .brush{
+            
+        }
+        #chooseus .button a {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        #chooseus .text {
+            flex-direction: column;
+        }
+        #chooseus .text .single-card p {
+            width: 419px;
+            font-size: 14px;
+            margin: auto;
+        }
+        #chooseus .text .single-card{
+            text-align: center;
+        }
+        /* =========== choose us part============== */
+        /* =========== marquee part============== */
+        #marquee{
+            /* height: 50px; */
+            padding: 0;
+            margin: 0;
+        }
+        #marquee .marquee-row h2 {
+            font-size: 30px;
+        }
+        #marquee .marquee-row img {
+            width: 35px;
+        }
+        /* =========== marquee part============== */
+        /* =========== cleaning part============== */
+        #cleaning {
+            padding: 0 0 60px;
+        }
+        #cleaning .text {
+            padding: 20px 14px;
+        }
+        #cleaning .text h2 {
+            font-size: 29px;
+            line-height: 45px;
+            margin: 6px 0 18px;
+        }
+        #cleaning .counter {
+            padding-bottom: 22px;
+            margin-bottom: 24px;
+            flex-direction: column;
+        }
+        #cleaning .bottom-text h6 {
+            font-size: 14px;
+            line-height: 21px;
+            margin-left: 0px;
+        }
+        /* =========== cleaning part============== */
+        /* =========== our services part============== */
+        #our_services {
+            padding-bottom: 60px;
+        }
+        #our_services .heading h2 {
+            font: 700 35px var(--quicksand);
+            line-height: 40px;
+            margin: 8px 0 41px;
+        }
+        #our_services .text {
+            padding: 20px 8px 0px;
+        }
+     
+        #our_services .text h3 {
+            font: 700 22px var(--quicksand);
+            line-height: 25px;
+            text-align: center;
+        }
+        #our_services .text p {
+            font: 400 14px var(--opensans);
+            line-height: 20px;
+            text-align: center;
+        }
+        #our_services .text .bottom_icon {
+            margin: auto;
+        }
+        /* =========== our services part============== */
+        /* =========== counter part============== */
+        #counters {
+            padding-bottom: 60px;
+        }
+        #counters .heading {
+            margin-bottom: 42px;
+        }
+        #counters .single_card h2 {
+            justify-content: center;
+        }
+        #counters .single_card p {
+            font: 400 17px var(--opensans);
+            text-align: center;
+        }
+        /* =========== counter part============== */
+        /* =========== calculator part============== */
+        #calculator {
+            padding: 0;
+        }
+        #calculator .calc_bg {
+            padding: 0;
+            border-radius: 30px;
+        }
+        #calculator .row .col-lg-6{
+            padding: 0;
+            margin: 0;
+        }
+        #calculator .form_bg {
+            padding: 42px 22px 100px;
+        }
+        #calculator .form_bg .calc_form {
+            flex-direction: column;
+        }
+        #calculator h2 {
+            font: 700 40px var(--quicksand);
+            line-height: 50px;
+            margin: 6px 0 48px;
+        }
+        #calculator .form_bg .calc_form .inputs {
+            width: 100%;
+        }
+        #calculator .form_bg .calc_form p {
+            font: italic 14px var(--opensans);
+        }
+        #calculator .form_bg .calc_form button {
+            padding: 12px 30px;
+            font: 600 14px var(--quicksand);
+            bottom: -101px;
+            right: 30px;
+        }
+        /* =========== calculator part============== */
+        /* =========== testimonial part============== */
+        #testimonial .heading h4 {
+            font: 700 12px var(--quicksand);
+        }
+        #testimonial .heading h2 {
+            font: 700 22px var(--quicksand);
+            line-height: 33px;
+        }
+        #testimonial .single_card p {
+            font: 500 12px var(--quicksand);
+            line-height: 16px;
+        }
+        #testimonial .single_card {
+            padding: 20px 15px 87px;
+        }
+        #testimonial .test_client {
+            right: 36px;
+        }
+        /* =========== testimonial part============== */
+        /* =========== brand part============== */
+        #brand .brand_img {
+            margin: auto;
+        }
+        #brand .row {
+            padding: 51px 0 50px;
+        }
+        /* =========== brand part============== */
+        /* =========== pricing part============== */
+        #pricing {
+            padding: 60px 0px;
+        }
+        #pricing .row {
+            padding: 31px 5px;
+        }
+        #pricing .row .single_card {
+            padding: 60px 40px 82px;
+            margin-top: 20px;
+        }
+        #pricing .row .single_card h4 {
+            font: 700 16px var(--quicksand);
+            line-height: 16px;
+        }
+        #pricing .row .single_card h2 {
+            font: 700 50px var(--quicksand);
+            line-height: 55px;
+        }
+        #pricing .row .single_card h2 sup {
+            font-size: 31px;
+            line-height: 35px;
+        }
+        #pricing ul p {
+            font: 400 13px var(--opensans);
+            line-height: 20px;
+            gap: 6px;
+        }
+        #pricing .button {
+            height: 55px;
+            display: flex;
+            justify-content: center;
+        }
+        #pricing .pricing_text{
+            display: none;
+        }
+        /* =========== pricing part============== */
+        /* =========== footer part============== */
+        footer {
+            padding: 0 0px;
+        }
+        #footer {
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+        #footer .img{
+            padding-bottom: 30px;
+        }
+        #footer .img img{
+            width: 60px;
+        }
+        #footer .footer_heading {
+            margin-top: 30px;
+            flex-direction: column;
+        }
+        #footer .footer_heading h2 {
+            font: 600 30px var(--quicksand);
+            line-height: 46px;
+        }
+        #footer .footer_heading .inputs {
+            height: 42px;
+            padding-left: 10px;
+        }
+        #footer .footer_heading .inputs input {
+            font: 400 13px var(--opensans);
+        }
+        .common-btn {
+            padding: 13px 9px;
+            font-size: 10px;
+        }
+        #footer h6 {
+            margin: 40px 0 14px;
+        }
+        /* =========== footer part============== */
+ }
 @media (max-width: 575.98px) {
     /* =========== menu bar part============== */
     .menubar{
@@ -156,14 +485,7 @@
     #our_services .text {
         padding: 20px 8px 0px;
     }
-    .slick-arrow{
-        width: 20px;
-        height: 30px;
-        background-color: black;
-        color: white;
-        border: none;
-        border-radius: 3px;
-    }
+ 
     #our_services .text h3 {
         font: 700 22px var(--quicksand);
         line-height: 25px;
@@ -229,4 +551,105 @@
         right: 30px;
     }
     /* =========== calculator part============== */
+    /* =========== testimonial part============== */
+    #testimonial .heading h4 {
+        font: 700 12px var(--quicksand);
+    }
+    #testimonial .heading h2 {
+        font: 700 22px var(--quicksand);
+        line-height: 33px;
+    }
+    #testimonial .single_card p {
+        font: 500 12px var(--quicksand);
+        line-height: 16px;
+    }
+    #testimonial .single_card {
+        padding: 20px 15px 87px;
+    }
+    #testimonial .test_client {
+        right: 36px;
+    }
+    /* =========== testimonial part============== */
+    /* =========== brand part============== */
+    #brand .brand_img {
+        margin: auto;
+    }
+    #brand .row {
+        padding: 51px 0 50px;
+    }
+    /* =========== brand part============== */
+    /* =========== pricing part============== */
+    #pricing {
+        padding: 60px 0px;
+    }
+    #pricing .row {
+        padding: 31px 5px;
+    }
+    #pricing .row .single_card {
+        padding: 60px 40px 82px;
+        margin-top: 20px;
+    }
+    #pricing .row .single_card h4 {
+        font: 700 16px var(--quicksand);
+        line-height: 16px;
+    }
+    #pricing .row .single_card h2 {
+        font: 700 50px var(--quicksand);
+        line-height: 55px;
+    }
+    #pricing .row .single_card h2 sup {
+        font-size: 31px;
+        line-height: 35px;
+    }
+    #pricing ul p {
+        font: 400 13px var(--opensans);
+        line-height: 20px;
+        gap: 6px;
+    }
+    #pricing .button {
+        height: 55px;
+        display: flex;
+        justify-content: center;
+    }
+    #pricing .pricing_text{
+        display: none;
+    }
+    /* =========== pricing part============== */
+    /* =========== footer part============== */
+    footer {
+        padding: 0 0px;
+    }
+    #footer {
+        padding: 50px 0;
+        border-radius: 10px;
+    }
+    #footer .img{
+        padding-bottom: 30px;
+    }
+    #footer .img img{
+        width: 60px;
+    }
+    #footer .footer_heading {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    #footer .footer_heading h2 {
+        font: 600 30px var(--quicksand);
+        line-height: 46px;
+    }
+    #footer .footer_heading .inputs {
+        height: 42px;
+        padding-left: 10px;
+    }
+    #footer .footer_heading .inputs input {
+        font: 400 13px var(--opensans);
+    }
+    .common-btn {
+        padding: 13px 9px;
+        font-size: 10px;
+    }
+    #footer h6 {
+        margin: 40px 0 14px;
+    }
+    /* =========== footer part============== */
 }

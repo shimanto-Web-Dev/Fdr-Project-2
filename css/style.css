@@ -34,6 +34,9 @@ body{
   /* line-height: 24px; */
   transition: 0.3s;
 }
+.slick-dots{
+  display: none !important;
+ }
  /* ================common css end ============== */
 
  /* =============menupart start =============== */
@@ -375,9 +378,7 @@ body{
 #chooseus .text:nth-child(2){
   margin-top: 74px;
 }
-#chooseus .text .single-card{
-  width: 356px;
-}
+
 #chooseus .text .single-card h2{
   font-size: 24px;
   font-weight: 700;
@@ -584,6 +585,14 @@ body{
    display: flex;
    gap: 40px;
   }
+  .slick-arrow{
+    width: 30px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
   #our_services .our_services_slider .single_card{
     margin: 0 10px;
   }
@@ -852,9 +861,10 @@ body{
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-  padding: 71px 71px 54px;
-  border: 1px solid rgba(0, 24, 55, 0.15);
-  border-radius: 30px;
+   padding: 71px 71px 54px;
+   border: 1px solid rgba(0, 24, 55, 0.15);
+   border-radius: 30px;
+   margin: 0 10px;
  }
 
  #testimonial .single_card p{
@@ -880,6 +890,20 @@ body{
   right: 56px;
   overflow: hidden;
  }
+ #testimonial .test_left_arrow{
+    position: absolute;
+    top: -55px;
+    right: 30px;
+ }
+ #testimonial .test_right_arrow{
+    position: absolute;
+    top: -55px;
+    right: -10px;
+ }
+ #testimonial .slick-arrow{
+  border-radius: 10px;
+ }
+ 
   
  /* ==============testimonial part end ========== */
 
@@ -1077,6 +1101,7 @@ body{
 #news .single_card{
   border: 1px solid rgba(0, 24, 55, 0.15);
   border-radius: 30px;
+  margin: 0 10px;
 }
 #news .single_card .img{
   width: 100%;
@@ -1148,7 +1173,20 @@ body{
   line-height: 24px;
   text-transform: uppercase;
 }
-  
+#news .news_left_arrow{
+  position: absolute;
+  top: -55px;
+  right: 40px;
+}
+#news .news_right_arrow{
+  position: absolute;
+  top: -55px;
+  right: 0px;
+}
+#news .slick-arrow{
+border-radius: 10px;
+}
+
   /* ============== news part end ============== */
 
   /* ============== footer part start=========== */
