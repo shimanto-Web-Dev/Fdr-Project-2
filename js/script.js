@@ -8,19 +8,19 @@ $('.our_services_slider').slick({
     nextArrow: '<button><i class="fa-solid fa-chevron-right right_arrow"></i></button>',
     responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1399,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
     },
     {
-      breakpoint: 991,
+      breakpoint: 1199,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {
@@ -46,19 +46,19 @@ $('.our_services_slider').slick({
     nextArrow: '<button class="test_right_arrow"><i class="fa-solid fa-chevron-right right_arrow"></i></button>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1399,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 991,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
@@ -83,19 +83,19 @@ $('.our_services_slider').slick({
     nextArrow: '<button class="news_right_arrow"><i class="fa-solid fa-chevron-right right_arrow"></i></button>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1399,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 991,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
